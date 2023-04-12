@@ -25,7 +25,28 @@
 3. Подключить дополнительный репозиторий MySQL. Установить любой пакет
 из этого репозитория.
 
+        1. sudo apt-get update
+        
+        2. sudo apt-get install \
+    	 		ca-certificates \
+    			 curl \
+    	 		gnupg \
+    	 		lsb-release
+ 	
+        3. sudo mkdir -p /etc/apt/keyrings
+ 	
+        4. curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg 
+        
+        5. echo \
+                "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  	        $(lsb_release -cs) stable" | sudo tee /eshowtc/apt/sources.list.d/docker.list > /dev/null
+        
+        6. sudo apt-get update
+
+
 4. Установить и удалить deb-пакет с помощью dpkg.
+
+
 
 5. Выложить историю команд в терминале ubuntu
 
