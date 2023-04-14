@@ -48,7 +48,7 @@
 > Скачал .deb пакет браузер Opera
         
         1. sudo dpkg -i opera-stable_97.0.4719.63_amd64.deb 
-                : Проверил, что установился пакет [Task/Task-4]
+                : Проверил, что установился пакет [Task/Task-4 и Task-4.1]
         2. sudo dpkg -r opera-stable
 
 
