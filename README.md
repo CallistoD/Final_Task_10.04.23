@@ -53,6 +53,41 @@
 
 
 5. Выложить историю команд в терминале ubuntu
+        
+        1  history
+        2  history -w
+        3  Lucy124124124
+        4  cat docker.list
+        5  cd /etc/apt/sources.list.d
+        6  cat docker.list
+        7  cd ~
+        8  ls -l
+        9  cd snap
+        10  ls -l
+        11  cd /home
+        12  ls- l
+        13  ls -l
+        14  cd apolon
+        15  ls -l
+        16  dpkg -l
+        17  dpkg -i bluez
+        18  cd /Download
+        19  cd Downloads/
+        20  ls -l
+         21  cd Загрузки/
+        22  ls -l
+        23  sudo dpkg
+        24  sudo dpkg -i google-chrome-stable_current_amd64.deb
+        25  ls -l
+        26  sudo dpkg -i opera-stable_97.0.4719.63_amd64.deb
+        27  dpkg -r opera-stable_97.0.4719.63_amd64.deb
+        28  sudo dpkg -r opera-stable_97.0.4719.63_amd64.deb
+        29  dpkg --help
+        30  sudo apt remove opera-stable
+        31  sudo apt autoremove
+        32  history 
+        33  sudo dpkg -r opera-stable
+        34  history
 
 6. Нарисовать диаграмму, в которой есть класс родительский класс, домашние
 животные и вьючные животные, в составы которых в случае домашних
