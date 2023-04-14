@@ -45,7 +45,11 @@
 
 
 4. Установить и удалить deb-пакет с помощью dpkg.
-
+> Скачал .deb пакет браузер Opera
+        
+        1. sudo dpkg -i opera-stable_97.0.4719.63_amd64.deb 
+                : Проверил, что установился пакет [Task/Task-4]
+        2. sudo dpkg -r opera-stable
 
 
 5. Выложить историю команд в терминале ubuntu
