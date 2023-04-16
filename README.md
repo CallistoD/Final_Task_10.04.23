@@ -104,9 +104,53 @@
         USE human_friends;
         
 8. Создать таблицы с иерархией из диаграммы в БД
-
+        
+           -->  Pets  <--                                 -->  Work animals  <--
+        CREATE DATABASE cats(                           CREATE DATABASE horses(
+                name VARCHAR(45),                               name VARCHAR(45),
+                command VARCHAR(45),                            command VARCHAR(45),
+                birthday DATE                                   birthday DATE
+                );                                              );
+                
+        CREATE DATABASE dogs(                           CREATE DATABASE camels(
+                name VARCHAR(45),                               name VARCHAR(45),
+                command VARCHAR(45),                            command VARCHAR(45),
+                birthday DATE                                   birthday DATE
+                );                                              );
+                
+        CREATE DATABASE humsters(                       CREATE DATABASE donkey(
+                name VARCHAR(45),                               name VARCHAR(45),
+                command VARCHAR(45),                            command VARCHAR(45),
+                birthday DATE                                   birthday DATE
+                );                                              );
+                
 9. Заполнить низкоуровневые таблицы именами(животных), командами
 которые они выполняют и датами рождения
+ 
+                -->  Pets  <--                                                  -->  Work animals  <--
+        INSERT INTO cats(name, command, birthday)                       INSERT INTO horses(name, command, birthday)
+        VALUES                                                          VALUES
+        ('Apolon', 'sleep', '2021-03-13'),                              ('Huch', 'sit', '2021-09-09'),
+        ('Slivki', 'sit', '2023-01-01'),                                ('Puk', 'sleep', '2023-02-09'),
+        ('Leto', 'run', '2000-08-13'),                                  ('Smouk', 'jump', '2018-12-12'),
+        ('Ani', 'jump', '2015-12-15'),                                  ('Juli', 'jump', '2015-05-05'),
+        ('Bella', 'spin', '2003-03-03');                                ('Poppy', 'run', '2003-01-01');
+        
+        INSERT INTO dogs(name, command, birthday)                       INSERT INTO camels(name, command, birthday)
+        VALUES                                                          VALUES
+        ('Selena', 'sit', '2021-12-21'),                                ('Golivud', 'voice', '2021-03-13'),
+        ('Matilda', 'voic', '2023-03-03'),                              ('Persik', 'sleep', '2022-11-11'),
+        ('Asterisk', 'run', '2000-10-09'),                              ('Miki', 'fly', '2022-11-11'),
+        ('Umi', 'grab', '2015-11-11'),                                  ('Molli', 'sit', '2022-11-11'),
+        ('Kratos', 'fly', '2003-09-19');                                ('Sue', 'run', '2003-02-13');
+
+        INSERT INTO humsters(name, command, birthday)                   INSERT INTO donkey(name, command, birthday)
+        VALUES                                                          VALUES
+        ('Bubble', 'jump', '2021-06-06'),                               ('Ishak', 'voic', '2021-11-11'),
+        ('Jam', 'sit', '2022-11-11'),                                   ('Campot', 'run', '2022-09-09'),
+        ('Bond', 'run', '2018-03-03'),                                  ('Sharki', 'sit', '2018-07-27'),
+        ('Vais', 'fly', '2015-09-09'),                                  ('Shrek', 'sleep', '2015-12-21'),
+        ('Kuksi', 'jump', '2003-02-13');                                ('Bobby', 'fly', '2003-04-04');
 
 10. Удалив из таблицы верблюдов, т.к. верблюдов решили перевезти в другой
 питомник на зимовку. Объединить таблицы лошади, и ослы в одну таблицу.
