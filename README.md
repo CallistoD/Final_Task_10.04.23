@@ -96,11 +96,13 @@
 
 ![](https://raw.githubusercontent.com/CallistoD/Final_Task_10.04.23/main/Tasks/Task-6.jpg)
 
-
-
 7. В подключенном MySQL репозитории создать базу данных “Друзья
 человека”
 
+        DROP DATABASE IF EXISTS human_friends; 
+        CREATE DATABASE human_friends; 
+        USE human_friends;
+        
 8. Создать таблицы с иерархией из диаграммы в БД
 
 9. Заполнить низкоуровневые таблицы именами(животных), командами
