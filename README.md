@@ -155,6 +155,8 @@
 10. Удалив из таблицы верблюдов, т.к. верблюдов решили перевезти в другой
 питомник на зимовку. Объединить таблицы лошади, и ослы в одну таблицу.
 
+        TRUNCATE TABLE Верблюды;
+        
         SELECT name, command, birthday FROM horses
         UNION
         SELECT name, command, birthday FROM donkey; 
@@ -163,9 +165,61 @@
 животные старше 1 года, но младше 3 лет и в отдельном столбце с точностью
 до месяца подсчитать возраст животных в новой таблице
 
+        CREATE TABLE `Young animals`
+        
+        SELECT name, command, birthday, 
+        (YEAR(CURRENT_DATE)-YEAR(birthday)) - (RIGHT(CURRENT_DATE,5)<RIGHT(birthday,5)) AS Age 
+        FROM dogs  
+        WHERE (YEAR(CURRENT_DATE)-YEAR(birthday)) - (RIGHT(CURRENT_DATE,5)<RIGHT(birthday,5)) < 3 
+        AND (YEAR(CURRENT_DATE)-YEAR(birthday)) - (RIGHT(CURRENT_DATE,5)<RIGHT(birthday,5)) > 1
+        UNION
+        SELECT name, command, birthday, 
+        (YEAR(CURRENT_DATE)-YEAR(birthday)) - (RIGHT(CURRENT_DATE,5)<RIGHT(birthday,5)) AS Age
+        FROM cats
+        WHERE (YEAR(CURRENT_DATE)-YEAR(birthday)) - (RIGHT(CURRENT_DATE,5)<RIGHT(birthday,5)) < 3 
+        AND (YEAR(CURRENT_DATE)-YEAR(birthday)) - (RIGHT(CURRENT_DATE,5)<RIGHT(birthday,5)) > 1
+        UNION
+        SELECT name, command, birthday, 
+        (YEAR(CURRENT_DATE)-YEAR(birthday)) - (RIGHT(CURRENT_DATE,5)<RIGHT(birthday,5)) AS Age
+        FROM humsters
+        WHERE (YEAR(CURRENT_DATE)-YEAR(birthday)) - (RIGHT(CURRENT_DATE,5)<RIGHT(birthday,5)) < 3 
+        AND (YEAR(CURRENT_DATE)-YEAR(birthday)) - (RIGHT(CURRENT_DATE,5)<RIGHT(birthday,5)) > 1
+        UNION
+        SELECT name, command, birthday, 
+        (YEAR(CURRENT_DATE)-YEAR(birthday)) - (RIGHT(CURRENT_DATE,5)<RIGHT(birthday,5)) AS Age
+        FROM horses
+        WHERE (YEAR(CURRENT_DATE)-YEAR(birthday)) - (RIGHT(CURRENT_DATE,5)<RIGHT(birthday,5)) < 3 
+        AND (YEAR(CURRENT_DATE)-YEAR(birthday)) - (RIGHT(CURRENT_DATE,5)<RIGHT(birthday,5)) > 1
+        UNION
+        SELECT name, command, birthday, 
+        (YEAR(CURRENT_DATE)-YEAR(birthday)) - (RIGHT(CURRENT_DATE,5)<RIGHT(birthday,5)) AS Age
+        FROM camels
+        WHERE (YEAR(CURRENT_DATE)-YEAR(birthday)) - (RIGHT(CURRENT_DATE,5)<RIGHT(birthday,5)) < 3 
+        AND (YEAR(CURRENT_DATE)-YEAR(birthday)) - (RIGHT(CURRENT_DATE,5)<RIGHT(birthday,5)) > 1
+        UNION
+        SELECT name, command, birthday, 
+        (YEAR(CURRENT_DATE)-YEAR(birthday)) - (RIGHT(CURRENT_DATE,5)<RIGHT(birthday,5)) AS Age
+        FROM donkey
+        WHERE (YEAR(CURRENT_DATE)-YEAR(birthday)) - (RIGHT(CURRENT_DATE,5)<RIGHT(birthday,5)) < 3 
+        AND (YEAR(CURRENT_DATE)-YEAR(birthday)) - (RIGHT(CURRENT_DATE,5)<RIGHT(birthday,5)) > 1;
+
+        ALTER TABLE `Young animals` ADD COLUMN Age_full VARCHAR (30);
+        UPDATE `Young animals` SET Age_full = (CONCAT(TIMESTAMPDIFF(YEAR, birthday, CURRENT_DATE),' year ', 
+        TIMESTAMPDIFF(MONTH, birthday, CURRENT_DATE) % 12, ' month '));
+
 12. Объединить все таблицы в одну, при этом сохраняя поля, указывающие на
 прошлую принадлежность к старым таблицам.
-
+        
+        SELECT name, command, birthday FROM cats
+        UNION
+        SELECT name, command, birthday FROM dogs
+        UNION
+        SELECT name, command, birthday FROM humsters
+        UNION
+        SELECT name, command, birthday FROM horses
+        UNION
+        SELECT name, command, birthday FROM donkey;
+        
 13. Создать класс с Инкапсуляцией методов и наследованием по диаграмме.
 
 14. Написать программу, имитирующую работу реестра домашних животных.
