@@ -105,24 +105,24 @@
         
 8. Создать таблицы с иерархией из диаграммы в БД
         
-           -->  Pets  <--                                 -->  Work animals  <--
-        CREATE DATABASE cats(                           CREATE DATABASE horses(
-                name VARCHAR(45),                               name VARCHAR(45),
-                command VARCHAR(45),                            command VARCHAR(45),
-                birthday DATE                                   birthday DATE
-                );                                              );
+           -->  Pets  <--                            -->  Work animals  <--
+        CREATE TABLE cats(                           CREATE TABLE horses(
+                name VARCHAR(45),                       name VARCHAR(45),
+                command VARCHAR(45),                    command VARCHAR(45),
+                birthday DATE                           birthday DATE
+                );                                      );
                 
-        CREATE DATABASE dogs(                           CREATE DATABASE camels(
-                name VARCHAR(45),                               name VARCHAR(45),
-                command VARCHAR(45),                            command VARCHAR(45),
-                birthday DATE                                   birthday DATE
-                );                                              );
+        CREATE TABLE dogs(                           CREATE TABLE camels(
+                name VARCHAR(45),                       name VARCHAR(45),
+                command VARCHAR(45),                    command VARCHAR(45),
+                birthday DATE                           birthday DATE
+                );                                      );
                 
-        CREATE DATABASE humsters(                       CREATE DATABASE donkey(
-                name VARCHAR(45),                               name VARCHAR(45),
-                command VARCHAR(45),                            command VARCHAR(45),
-                birthday DATE                                   birthday DATE
-                );                                              );
+        CREATE TABLE humsters(                       CREATE TABLE donkey(
+                name VARCHAR(45),                       name VARCHAR(45),
+                command VARCHAR(45),                    command VARCHAR(45),
+                birthday DATE                           birthday DATE
+                );                                      );
                 
 9. Заполнить низкоуровневые таблицы именами(животных), командами
 которые они выполняют и датами рождения
