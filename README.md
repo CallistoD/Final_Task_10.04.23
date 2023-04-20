@@ -6,6 +6,8 @@
 хомяками) и Вьючные животными заполнив файл Лошадьми, верблюдами и
 ослы), а затем объединить их. Просмотреть содержимое созданного файла.
 Переименовать файл, дав ему новое имя (Друзья человека).
+
+[Task - 1](https://github.com/CallistoD/Final_Task_10.04.23/blob/main/Tasks/Task%20-%201.jpg)
         
         1. ls -l
         2. cat > pets
@@ -19,11 +21,15 @@
 
 2. Создать директорию, переместить файл туда.
 
+[Task - 2](https://github.com/CallistoD/Final_Task_10.04.23/blob/main/Tasks/Task%20-%202.jpg)
+        
         1. mkdir 
         2. mv human-friends animals
 
 3. Подключить дополнительный репозиторий MySQL. Установить любой пакет
 из этого репозитория.
+
+[Task - 3](https://github.com/CallistoD/Final_Task_10.04.23/blob/main/Tasks/Task%20-%203.jpg)
 
         1. sudo apt-get update
         
@@ -46,14 +52,18 @@
 
 4. Установить и удалить deb-пакет с помощью dpkg.
 > Скачал .deb пакет браузер Opera
-        
+   
+   [Task - 4](https://github.com/CallistoD/Final_Task_10.04.23/blob/main/Tasks/Task-4.jpg)
+   
         1. sudo dpkg -i opera-stable_97.0.4719.63_amd64.deb 
                 : Проверил, что установился пакет [Task/Task-4 и Task-4.1]
         2. sudo dpkg -r opera-stable
 
 
 5. Выложить историю команд в терминале ubuntu
-        
+
+[Task - 5](https://github.com/CallistoD/Final_Task_10.04.23/blob/main/Tasks/Task-5.jpg)
+
         1  history
         2  history -w
         3  Lucy124124124
@@ -94,10 +104,14 @@
 животных войдут классы: собаки, кошки, хомяки, а в класс вьючные животные
 войдут: Лошади, верблюды и ослы).
 
+[Task - 6](https://github.com/CallistoD/Final_Task_10.04.23/blob/main/Tasks/Task-6.jpg)
+
 ![](https://raw.githubusercontent.com/CallistoD/Final_Task_10.04.23/main/Tasks/Task-6.jpg)
 
 7. В подключенном MySQL репозитории создать базу данных “Друзья
 человека”
+
+[Task - 7](https://github.com/CallistoD/Final_Task_10.04.23/blob/main/Tasks/Task-7.jpg)
 
         DROP DATABASE IF EXISTS human_friends; 
         CREATE DATABASE human_friends; 
@@ -154,6 +168,8 @@
 
 10. Удалив из таблицы верблюдов, т.к. верблюдов решили перевезти в другой
 питомник на зимовку. Объединить таблицы лошади, и ослы в одну таблицу.
+
+[Task - 10](https://github.com/CallistoD/Final_Task_10.04.23/blob/main/Tasks/Task-10.jpg)
 
         TRUNCATE TABLE Верблюды;
         
