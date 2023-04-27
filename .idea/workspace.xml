@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8e140b5-f4f7-4a82-ad96-0142670663f2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RegistryAnimals.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interface/Characters.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interface/Count.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interface/Creator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Interface/UI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Camel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Dog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Donkey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Hamster.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Horse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Pet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/SetAnimals.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Model/Zoo.java" afterDir="false" />
-    </list>
+    <list default="true" id="f8e140b5-f4f7-4a82-ad96-0142670663f2" name="Changes" comment="14 and 15 Tasks" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,6 +13,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="APP/main" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,13 +29,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
