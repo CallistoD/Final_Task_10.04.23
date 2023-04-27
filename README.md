@@ -106,7 +106,7 @@
 
 [Task - 6](https://github.com/CallistoD/Final_Task_10.04.23/blob/main/Tasks/Task-6.jpg)
 
-![](https://raw.githubusercontent.com/CallistoD/Final_Task_10.04.23/main/Tasks/Task-6.jpg)
+![](https://raw.githubusercontent.com/CallistoD/Final_Task_10.04.23/main/Tasks/изображение_2023-04-27_202641918.png)
 
 7. В подключенном MySQL репозитории создать базу данных “Друзья
 человека”
